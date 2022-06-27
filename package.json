@@ -1,5 +1,5 @@
 {
-  "name": "pino-loki",
+  "name": "@mahamed-belkheir/pino-loki",
   "version": "2.0.0",
   "description": "A transport for pino that sends messages to Loki",
   "keywords": [
@@ -8,16 +8,16 @@
     "loki",
     "logging"
   ],
-  "homepage": "https://github.com/Julien-R44/pino-loki#readme",
+  "homepage": "https://github.com/Mahamed-Belkheir/pino-loki#readme",
   "bugs": {
-    "url": "https://github.com/Julien-R44/pino-loki/issues"
+    "url": "https://github.com/Mahamed-Belkheir/pino-loki/issues"
   },
   "packageManager": "pnpm@6.32.9",
   "license": "MIT",
   "author": "Julien Ripouteau <julien@ripouteau.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Julien-R44/pino-loki.git"
+    "url": "git+https://github.com/Mahamed-Belkheir/pino-loki.git"
   },
   "bin": {
     "pino-loki": "dist/cli.cjs"

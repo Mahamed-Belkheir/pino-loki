@@ -79,4 +79,11 @@ export interface PinoLokiOptionsContract {
     username: string
     password: string
   }
+
+  /**
+   *  Org Id to be used as the X-Scope-OrgID header when sending logs to loki, required when
+   *  using Loki in multitenancy mode, e.g. if using Grafana Cloud
+   */
+
+  orgId?: string
 }

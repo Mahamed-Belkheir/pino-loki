@@ -12,9 +12,18 @@ export class LogPusher {
 
   constructor(options: PinoLokiOptionsContract) {
     this.options = options
+
+    let headers
+
+    if (options.orgId) {
+      headers = {
+        'X-Scope-OrgID': options.orgId,
+      }
+    }
     this.client = axios.create({
       baseURL: this.options.host,
       timeout: this.options.timeout,
+      headers,
     })
 
     if (this.options.basicAuth) {
